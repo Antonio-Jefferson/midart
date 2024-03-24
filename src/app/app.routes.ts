@@ -9,8 +9,7 @@ import { NotFoundPageComponent } from './components/pages/not-found-page/not-fou
 export const routes: Routes = [
     {path: "",component: LoginComponent},
     {path: "register",component: RegisterComponent},
-    {path: "**", component: NotFoundPageComponent},
-    {path: 'dashboard', redirectTo: 'dashboard/home', pathMatch: 'full' },
+    
     { 
         path: "dashboard",
         component: DashboardLayoutComponent, 
@@ -18,6 +17,8 @@ export const routes: Routes = [
             { path: "home", component: HomeComponent },
             { path: "profile", component: ProfileComponent },
         ]
-    }
+    },
+    {path: 'dashboard', redirectTo: 'dashboard/home', pathMatch: 'full' },
+    {path: "**", component: NotFoundPageComponent},
     
 ];
