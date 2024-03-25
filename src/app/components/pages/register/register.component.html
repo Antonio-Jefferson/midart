@@ -34,7 +34,7 @@
         <div class="welcome-container">
             <h1>Bem-Vindo ao MidArt!</h1>
             <p> Estamos animados para ter você em nossa comunidade de artistas.</p>
-            <button routerLink="/">LOGIN</button>
+            <app-custom-button routerLink="/" buttonText="LOGIN" buttonClass="welcome-button"></app-custom-button>
             <div>
                 <div class="or">
                     <div></div>
@@ -42,14 +42,10 @@
                     <div></div>
                 </div>
                 <div class="login-cosial">
-                    <div class="social-media">
-                        <img src="./assets/images/icons/facebook.png" alt="Facebook">
-                        <img src="./assets/images/icons/google.png" alt="Google">
-                        <img src="./assets/images/icons/twitter.png" alt="Twitter">
-                    </div>
+                    <app-social-media></app-social-media>
                 </div>
             </div>
-        </div>
+          </div>
     </div>
 </div>
 

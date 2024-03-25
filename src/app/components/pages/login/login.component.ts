@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { FormComponent } from '../../form/form.component';
+import { CustomButtonComponent } from '../../custom-button/custom-button.component';
+import { SocialMediaComponent } from '../../social-media/social-media.component';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, FormComponent, CustomButtonComponent, SocialMediaComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
