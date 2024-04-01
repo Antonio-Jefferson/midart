@@ -23,69 +23,74 @@
        font-weight: 700;
        color: #D65C2B; 
     }
-}
-
-.form{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    button {
-        width: 253px;
-        height: 72px;
-        margin: 10px auto;
-        border: none;
-        cursor: pointer;
-        border-radius: 20px;
-        background-color: #D65C2B;
-        padding: 20px 80px;
-
-        font-size:24px ;
-        font-weight: 600;
-        color: #fff;
-      }
-}
-
-.form-input{
-    display: flex;
-    flex-direction: column;
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     
-    label{
-        font-size: 22px;
-        font-weight: 500;
-        color: #1E1E1E;
+        button {
+            width: 253px;
+            height: 72px;
+            margin: 10px auto;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            background-color: #D65C2B;
+            padding: 20px 80px;
+    
+            font-size:24px ;
+            font-weight: 600;
+            color: #fff;
+    
+            &:disabled {
+                opacity: 0.8;
+            }
+          }
+          .form-input{
+            display: flex;
+            flex-direction: column;
+            
+            label{
+                font-size: 22px;
+                font-weight: 500;
+                color: #1E1E1E;
+            }
+        
+            input {
+                font-size: 26px;
+                font-weight: 400;
+                color: #1E1E1E;
+        
+                width: 630px;
+                height: 80px;
+                padding: 26px 23px;
+                border: none;
+                border-radius: 15px;
+        
+                background-color: #d9d9d9;
+            }
+        
+           input:focus{
+            outline: none;
+            background-color: #ff9166bb;
+           }
+        
+        }
+        
+        .input{
+            display: flex;
+            position: relative;
+            img{
+                position: absolute;
+                cursor: pointer;
+                right: 20px;
+                bottom: 22px;
+                width: 40px;
+                height: 40px;
+            }
+        }
     }
-
-    input {
-        font-size: 26px;
-        font-weight: 400;
-        color: #1E1E1E;
-
-        width: 630px;
-        height: 80px;
-        padding: 26px 23px;
-        border: none;
-        border-radius: 15px;
-
-        background-color: #d9d9d9;
-    }
-
-   input:focus{
-    outline: none;
-    background-color: #ff9166bb;
-   }
-
 }
+    
+    
 
-.input{
-    display: flex;
-    position: relative;
-    img{
-        position: absolute;
-        cursor: pointer;
-        right: 20px;
-        bottom: 22px;
-        width: 40px;
-        height: 40px;
-    }
-}

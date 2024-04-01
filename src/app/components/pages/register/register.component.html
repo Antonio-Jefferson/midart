@@ -1,51 +1,38 @@
 <div class="container">
     <img src="./assets/images/arte-bg.png" alt="imagem de fundo">
-   
     <div class="main-container">
         <div class="logo">
             <img src="./assets/images/logo.png" alt="Logo">
         </div>
         <div class="form-container">
             <h1>Cadastro<span>.</span></h1>
-            <form class="form" action="">
+            <form class="form" [formGroup]="registerForm" (submit)="registerUser()">
                 <div class="form-input">
-                    <label for="nome">Nome</label>
-                    <input id="nome" type="text" placeholder="Digite seu nome">
+                    <label for="firstname">Nome</label>
+                    <input id="firstname" type="text" formControlName="firstname" placeholder="Digite seu nome">
                 </div>
                 <div class="form-input">
-                    <label for="sobrenome">Sobrenome</label>
-                    <input id="sobrenome" type="text" placeholder="Digite seu sobrenome">
+                    <label for="lastname">Sobrenome</label>
+                    <input id="lastname" type="text" formControlName="lastname" placeholder="Digite seu sobrenome">
                 </div>
                 <div class="form-input">
                     <label for="email">Email</label>
-                    <input id="email" type="email" placeholder="exemplo@gmail.com">
+                    <input id="email" type="email" formControlName="email" placeholder="exemplo@gmail.com">
                 </div>
                 <div class="input">
                     <div class="form-input">
                         <label for="password">Senha</label>
-                        <input id="password" type="password" placeholder="Digite sua senha..." >
+                        <input id="password" type="password" formControlName="password" placeholder="Digite sua senha..." >
                     </div>
                     <img src="./assets/images/icons/eye.png" alt="icon-olho">
                 </div>
-
-                <button type="submit">Cadastrar</button>
+                <button type="submit" [disabled]="!registerForm.valid" >Cadastrar</button>
             </form>
         </div>
-        <div class="welcome-container">
-            <h1>Bem-Vindo ao MidArt!</h1>
-            <p> Estamos animados para ter você em nossa comunidade de artistas.</p>
-            <app-custom-button routerLink="/" buttonText="LOGIN" buttonClass="welcome-button"></app-custom-button>
-            <div>
-                <div class="or">
-                    <div></div>
-                    <p>Ou</p>
-                    <div></div>
-                </div>
-                <div class="login-cosial">
-                    <app-social-media></app-social-media>
-                </div>
-            </div>
-          </div>
+        <app-welcome
+            routerLink="/"
+            textButton="LOGIN"
+        ></app-welcome>
     </div>
 </div>
 
