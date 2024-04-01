@@ -6,8 +6,9 @@ import { UserServiceService } from '../../../services/userService/user-service.s
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { NgClass, NgIf } from '@angular/common';
 import { WelcomeComponent } from '../../welcome/welcome.component';
-import { UserRegister} from '../../../../@types/user-types';
+import { UserRegister, UserRegisterData} from '../../../../@types/user-types';
 import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -31,6 +32,7 @@ export class RegisterComponent {
     constructor(
       private userService: UserServiceService,
       private toastrService: ToastrService,
+      private router: Router
     ){
       this.registerForm = new FormGroup({
         firstname: new FormControl('', Validators.required),
@@ -41,11 +43,18 @@ export class RegisterComponent {
     }
 
     registerUser() {
-        const registerData = this.registerForm.value;
+      const registerData: UserRegisterData = {
+        firstname: this.registerForm.value.firstname || null,
+        lastname: this.registerForm.value.lastname || null,
+        email: this.registerForm.value.email || null,
+        password: this.registerForm.value.password || null
+      };
+  
         this.userService.saveUser(registerData).subscribe({
           next: () => {
             this.toastrService.success("Registro feito com sucesso!");
             this.registerForm.reset();
+            this.router.navigate(['/']);
           },
           error: () => this.toastrService.error("Erro ao registrar o usuário")
         })

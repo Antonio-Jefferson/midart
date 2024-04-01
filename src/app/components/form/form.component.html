@@ -1,14 +1,14 @@
 <div class="form-container">
   <h1>Login<span>.</span></h1>
-  <form class="form" action="">
+  <form class="form"  [formGroup]="loginForm" (submit)="login()">
       <div class="form-input">
           <label for="email">Email</label>
-          <input id="email" type="email" placeholder="exemplo@gmail.com">
+          <input id="email" type="email" formControlName="email" placeholder="exemplo@gmail.com">
       </div>
       <div class="input">
           <div class="form-input">
               <label for="password">Senha</label>
-              <input id="password" type="password" placeholder="Digite sua senha..." >
+              <input id="password" type="password" formControlName="password" placeholder="Digite sua senha..." >
           </div>
           <img src="./assets/images/icons/eye.png" alt="icon-olho">
       </div>
