@@ -5,6 +5,7 @@ import { ProfileComponent } from './components/pages/profile/profile.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { DashboardLayoutComponent } from './components/layout/dashboard-layout/dashboard-layout.component';
 import { NotFoundPageComponent } from './components/pages/not-found-page/not-found-page.component';
+import { AuthGuardService } from './guards/auth-guard.service';
 
 export const routes: Routes = [
     {path: "",component: LoginComponent},
@@ -12,7 +13,8 @@ export const routes: Routes = [
     
     { 
         path: "dashboard",
-        component: DashboardLayoutComponent, 
+        component: DashboardLayoutComponent,
+        canActivate: [AuthGuardService],
         children: [
             { path: "home", component: HomeComponent },
             { path: "profile", component: ProfileComponent },
