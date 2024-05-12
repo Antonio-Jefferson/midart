@@ -1,0 +1,11 @@
+.ul-list{
+  margin-top: 100px;
+  width: 900px;
+  max-height: 1230px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  .ul-list::-webkit-scrollbar {
+    display: none;
+  }
+}
