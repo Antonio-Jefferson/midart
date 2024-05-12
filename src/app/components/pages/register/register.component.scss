@@ -11,23 +11,23 @@
     background-color: #fff;
 
 
-    h1{    
+    h1{
        text-align: center;
        font-size: 64px;
        font-weight: 700;
-       color: #1E1E1E; 
+       color: #1E1E1E;
     }
 
     span{
         font-size: 64px;
        font-weight: 700;
-       color: #D65C2B; 
+       color: #D65C2B;
     }
     .form{
         display: flex;
         flex-direction: column;
         gap: 20px;
-    
+
         button {
             width: 253px;
             height: 72px;
@@ -37,11 +37,11 @@
             border-radius: 20px;
             background-color: #D65C2B;
             padding: 20px 80px;
-    
+
             font-size:24px ;
             font-weight: 600;
             color: #fff;
-    
+
             &:disabled {
                 opacity: 0.8;
             }
@@ -49,34 +49,34 @@
           .form-input{
             display: flex;
             flex-direction: column;
-            
+
             label{
                 font-size: 22px;
                 font-weight: 500;
                 color: #1E1E1E;
             }
-        
+
             input {
                 font-size: 26px;
                 font-weight: 400;
                 color: #1E1E1E;
-        
+
                 width: 630px;
                 height: 80px;
                 padding: 26px 23px;
                 border: none;
                 border-radius: 15px;
-        
+
                 background-color: #d9d9d9;
             }
-        
+
            input:focus{
             outline: none;
             background-color: #ff9166bb;
            }
-        
+
         }
-        
+
         .input{
             display: flex;
             position: relative;
@@ -91,6 +91,6 @@
         }
     }
 }
-    
-    
+
+
 

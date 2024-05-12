@@ -1,0 +1,96 @@
+.nav-container{
+  width: 300px;
+  padding: 14px 22px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .logo-container{
+    width: 240px;
+    height: 117px;
+
+  }
+
+  .nav{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    align-items: center;
+
+    ul:first-child p.active,
+      p:active {
+        color: #0e0e0e;
+      }
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    li{
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      div{
+        width: 30px;
+        height: 30px;
+      }
+
+      p{
+        font-size: 20px;
+        font-weight: 600;
+        color: #FFF;
+      }
+
+    }
+    .btns{
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      button{
+        cursor: pointer;
+        width: 235px;
+        height: 50px;
+        border: none;
+        border-radius: 25px;
+        background-color: #1E1E1E;
+        color: #fff;
+
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .container-out{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .image-profile{
+      width: 50px;
+      height: 50px;
+    }
+
+    p{
+      font-size: 20px;
+      font-weight: 500;
+      color: #FFF;
+    }
+
+    .icon-out{
+      width: 30px;
+      height: 30px;
+    }
+
+  }
+
+
+}
