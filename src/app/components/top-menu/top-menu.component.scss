@@ -1,0 +1,20 @@
+.top-menu{
+  width: 830px;
+  height: 70px;
+  border-radius: 14px;
+  padding:15px 25px;
+
+  background-color: #1E1E1E;
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  li{
+    list-style: none;
+    font-size:24px;
+    color:#F4F4F4;
+  }
+}

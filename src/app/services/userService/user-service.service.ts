@@ -23,4 +23,12 @@ export class UserServiceService {
       console.log(value.token)
     }))
   }
+
+  loginGoogle() {
+    return this.http.get("http://localhost:8080/auth/google").pipe(
+      tap((value) => {
+        sessionStorage.setItem("oauth-token", value.toString());
+      })
+    );
+  }
 }
