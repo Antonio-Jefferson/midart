@@ -1,0 +1,36 @@
+.card-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #2F3336;
+  padding: 12px;
+
+  .info-profile{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    p{
+      font-size: 14px;
+      font-weight: 500;
+      color: #2F3336;
+    }
+  }
+
+  .btn-follow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 95px;
+    height: 37px;
+
+    background-color: transparent;
+
+    border-radius: 15px;
+    border: 1px solid #CC670A;
+
+    color: #CC670A;
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
