@@ -1,0 +1,49 @@
+.menu-container{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+
+  width: 100%;
+
+  .menu-button{
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+    margin: 0px 0px 5px 5px;
+    border-radius: 50%;
+
+    background-color: #D65C2B;
+
+    .icon-add{
+      color: #FFF;
+    }
+  }
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 12px;
+
+    background-color: #aaa9a9;
+    li{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .menu-container {
+    display: none;
+  }
+}
