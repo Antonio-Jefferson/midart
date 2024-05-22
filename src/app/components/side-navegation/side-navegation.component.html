@@ -4,41 +4,29 @@
   </div>
   <div class="nav">
     <ul>
-      <li>
-        <div>
-          <img src="./assets/images/icons/house-solid.png" alt="icone casa">
-        </div>
-        <p class="active">Página inicial</p>
+      <li routerLink="/dashboard/home" routerLinkActive="active">
+          <mat-icon class="style-icon">home</mat-icon>
+          <p class="menu-text">Página inicial</p>
       </li>
-      <li>
-        <div>
-          <img src="./assets/images/icons/bell-solid.png" alt="icone de notificações">
-        </div>
-        <p>Notificações</p>
+      <li  routerLink="/dashboard/notifications" routerLinkActive="active">
+          <mat-icon class="style-icon">notifications</mat-icon>
+          <p class="menu-text" >Notificações</p>
       </li>
-      <li>
-        <div>
-          <img src="./assets/images/icons/bookmark-solid.png" alt="icone de favoritar">
-        </div>
-        <p>Favoritos</p>
+      <li  routerLink="/dashboard/favorites" routerLinkActive="active">
+          <mat-icon class="style-icon">bookmarks</mat-icon>
+          <p class="menu-text">Favoritos</p>
       </li>
-      <li>
-        <div>
-          <img src="./assets/images/icons/rug-solid.png" alt="icone de evento">
-        </div>
-        <p>Eventos</p>
+      <li  routerLink="/dashboard/events" routerLinkActive="active">
+          <mat-icon class="style-icon">event</mat-icon>
+          <p class="menu-text">Eventos</p>
       </li>
-      <li>
-        <div>
-          <img src="./assets/images/icons/Group.png" alt="icone de groupo">
-        </div>
-        <p>Grupos</p>
+      <li  routerLink="/dashboard/groups" routerLinkActive="active">
+          <mat-icon class="style-icon">group</mat-icon>
+          <p class="menu-text">Grupos</p>
       </li>
-      <li>
-        <div>
-          <img src="./assets/images/icons/user-solid.png" alt="icone de usuário">
-        </div>
-        <p>Perfil</p>
+      <li routerLink="/dashboard/profile" routerLinkActive="active">
+          <mat-icon class="style-icon">person</mat-icon>
+          <p class="menu-text">Perfil</p>
       </li>
     </ul>
     <div class="btns">
@@ -47,8 +35,10 @@
     </div>
   </div>
   <div class="container-out">
-    <div class="image-profile"> <img src="./assets/images/img-profile.png" alt="imagem de perfil"></div>
-    <p>Jefferon</p>
+    <div class="out-profile">
+      <div class="image-profile"> <img src="./assets/images/img-profile.png" alt="imagem de perfil"></div>
+      <p>Jefferon</p>
+    </div>
     <div class="icon-out">
       <img src="./assets/images/icons/Deslogar.png" alt="icone de deslogar">
     </div>
