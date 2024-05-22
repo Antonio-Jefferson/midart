@@ -1,12 +1,15 @@
 .top-menu{
-  position: absolute;
-  left: 74px;
-  width: 930px;
-  height: 70px;
-  border-radius: 14px;
-  padding:15px 25px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100%;
+  height: auto;
+  padding:20px 25px;
 
   background-color: #1E1E1E;
+
+  transition: border-radius 0.3s, top 0.3s;
 
   ul{
     display: flex;
@@ -15,14 +18,43 @@
   }
 
   li{
+    cursor: pointer;
     list-style: none;
     font-size:24px;
+    font-weight: 500;
     color:#F4F4F4;
   }
 
 }
-.top-menu ul:first-child li.active,
-.top-menu li:active {
-  color: #D65C2B;
-  border-bottom: 2px solid #D65C2B;
+
+
+@media (min-width: 1180px) {
+  .top-menu{
+    left: 300px;
+    width: 900px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-menu{
+    left: 310px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .top-menu{
+    border-radius: 20px;
+    top: 5px;
+    width: 900px;
+    left: 370px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .top-menu{
+    border-radius: 20px;
+    top: 5px;
+    width: 900px;
+    left: 420px;
+  }
 }

@@ -1,5 +1,7 @@
 .side-bar-dashboard{
-  width: 580px;
+  position: fixed;
+  right: 0;
+  width: 29%;
   height: 100%;
   padding: 20px 44px;
 
@@ -28,5 +30,11 @@
     input:focus {
       outline: none;
     }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .side-bar-dashboard {
+    display: none;
   }
 }

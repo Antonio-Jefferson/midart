@@ -1,4 +1,41 @@
 .layout-dashboard {
+  position: relative;
   display: flex;
-  background-color: #D65C2B,;
+  width: 100%;
+  .dashboard-content{
+    overflow-y: scroll;
+
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+  }
 }
+
+
+@media (min-width: 900px) {
+  .dashboard-content {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1030px) {
+  .dashboard-content {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1180px) {
+  .dashboard-content {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1680px) {
+  .dashboard-content{
+    justify-content: center;
+  }
+}
+
