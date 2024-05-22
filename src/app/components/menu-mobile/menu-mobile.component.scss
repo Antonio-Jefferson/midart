@@ -33,11 +33,26 @@
 
     padding: 8px 12px;
 
-    background-color: #aaa9a9;
+    background-color: #1E1E1E;
     li{
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    .style-icon {
+      color: #FFF;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    p{
+      color: #FFF;
+    }
+
+    li.active .style-icon,
+    li.active .menu-text {
+        color: #D65C2B;
     }
   }
 }
