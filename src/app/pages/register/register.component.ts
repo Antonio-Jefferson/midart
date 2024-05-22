@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { CustomButtonComponent } from '../../custom-button/custom-button.component';
-import { SocialMediaComponent } from '../../social-media/social-media.component';
-import { UserServiceService } from '../../../services/userService/user-service.service';
+import { CustomButtonComponent } from '../../components/custom-button/custom-button.component';
+import { SocialMediaComponent } from '../../components/social-media/social-media.component';
+import { UserServiceService } from '../../services/userService/user-service.service';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { NgClass, NgIf } from '@angular/common';
-import { WelcomeComponent } from '../../welcome/welcome.component';
-import { UserRegister, UserRegisterData} from '../../../../@types/user-types';
+import { WelcomeComponent } from '../../components/welcome/welcome.component';
+import { UserRegister, UserRegisterData} from '../../../@types/user-types';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
 
@@ -49,7 +49,7 @@ export class RegisterComponent {
         email: this.registerForm.value.email || null,
         password: this.registerForm.value.password || null
       };
-  
+
         this.userService.saveUser(registerData).subscribe({
           next: () => {
             this.toastrService.success("Registro feito com sucesso!");

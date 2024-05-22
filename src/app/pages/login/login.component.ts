@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { FormComponent } from '../../form/form.component';
-import { CustomButtonComponent } from '../../custom-button/custom-button.component';
-import { SocialMediaComponent } from '../../social-media/social-media.component';
-import { WelcomeComponent } from '../../welcome/welcome.component';
+import { FormComponent } from '../../components/form/form.component';
+import { CustomButtonComponent } from '../../components/custom-button/custom-button.component';
+import { SocialMediaComponent } from '../../components/social-media/social-media.component';
+import { WelcomeComponent } from '../../components/welcome/welcome.component';
 
 @Component({
   selector: 'app-login',
